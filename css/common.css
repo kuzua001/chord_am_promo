@@ -1,0 +1,72 @@
+/* -------------------------------------------------------------
+ *  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+ *  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+ *
+ *  List of CSS3 Sass Mixins File to be @imported and @included as you need
+ *
+ *  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+ *  ENDING css files
+ *
+ *  note: All CSS3 Properties are being supported by Safari 5
+ *  more info: http://www.findmebyip.com/litmus/#css3-properties
+ *
+ *------------------------------------------------------------- */
+html {
+  height: 100%; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100%;
+  background-color: black;
+  height: 100%; }
+  body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(82, 82, 82, 0.7);
+    z-index: 1; }
+
+footer {
+  flex: 0 0 auto;
+  z-index: 2; }
+  footer.page-footer {
+    background-color: #484848; }
+
+main {
+  flex: 1 0 auto;
+  z-index: 2; }
+
+.main-header {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 5vw;
+  color: white; }
+
+.main-search-element {
+  margin-top: 5vw; }
+  .main-search-element .search-wrapper {
+    position: relative;
+    padding-left: 0;
+    overflow: hidden; }
+    .main-search-element .search-wrapper i.material-icons {
+      position: absolute;
+      right: 10px;
+      top: 15px; }
+  .main-search-element input.search {
+    border: none;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #eeeeee;
+    min-height: 30px; }
+    .main-search-element input.search:focus {
+      outline: none;
+      border: none; }
